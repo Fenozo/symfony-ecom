@@ -1,0 +1,28 @@
+AppBundle\Entity\Tache:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\TacheRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+            nullable: true
+        description:
+            type: text
+            nullable: true
+        dateDebut:
+            type: datetime
+            column: date_debut
+        dateFin:
+            type: datetime
+            column: date_fin
+        status:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }
