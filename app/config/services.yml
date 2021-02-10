@@ -4,6 +4,6 @@ parameters:
     #parameter_name: value
 
 services:
-    #service_name:
-    #    class: AppBundle\Directory\ClassName
+    app_checker:
+        class: AppBundle\Helper\Checker
     #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']

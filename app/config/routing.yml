@@ -1,3 +1,18 @@
+acme_test:
+    resource: "@AcmeTestBundle/Controller/"
+    type:     annotation
+    prefix:   /test
+
+blog:
+    resource: "@BlogBundle/Controller/"
+    type:     annotation
+    prefix:   /blog
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+    prefix: /
+
+# app_file:
+#     # loads routes from the given routing file stored in some bundle
+#     resource: '@AcmeBlogBundle/Resources/config/routing.yaml'
