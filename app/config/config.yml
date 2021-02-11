@@ -4,10 +4,10 @@ imports:
     - { resource: services.yml }
     # - { resource: "@AcmeBlogBundle/Resources/config/services.yml" }
 
-assetic:
-    debug:          '%kernel.debug%'
-    use_controller: '%kernel.debug%'
-    bundles:
+# assetic:
+#     debug:          '%kernel.debug%'
+#     use_controller: '%kernel.debug%'
+#     bundles:
         # - BlogBundle
     
 

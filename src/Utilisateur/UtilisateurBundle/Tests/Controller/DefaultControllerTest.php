@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\TestBundle\Tests\Controller;
+namespace Utilisateur\UtilisateurBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\TestBundle\DependencyInjection;
+namespace Utilisateur\UtilisateurBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class AcmeTestExtension extends Extension
+class UtilisateurUtilisateurExtension extends Extension
 {
     /**
      * {@inheritdoc}

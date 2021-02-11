@@ -1,3 +1,13 @@
+utilisateur_utilisateur:
+    resource: "@UtilisateurUtilisateurBundle/Controller/"
+    type:     annotation
+    prefix:   /utilisateur
+
+acme_ecommerce:
+    resource: "@AcmeEcommerceBundle/Controller/"
+    type:     annotation
+    prefix:   /ecommerce
+
 acme_test:
     resource: "@AcmeTestBundle/Controller/"
     type:     annotation
