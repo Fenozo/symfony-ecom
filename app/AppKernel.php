@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new Acme\TestBundle\AcmeTestBundle(),
             new Acme\EcommerceBundle\AcmeEcommerceBundle(),
             new Utilisateur\UtilisateurBundle\UtilisateurUtilisateurBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

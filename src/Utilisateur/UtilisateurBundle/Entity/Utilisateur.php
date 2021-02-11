@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="utilisateur")
  * @ORM\Entity(repositoryClass="Utilisateur\UtilisateurBundle\Repository\UtilisateurRepository")
  */
-class Utilisateur extends BaseUser
+class Utilisateur extends \FOS\UserBundle\Model\User
 {
     /**
      * @var int
@@ -21,7 +21,7 @@ class Utilisateur extends BaseUser
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
 
     /**

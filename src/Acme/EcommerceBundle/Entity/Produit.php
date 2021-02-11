@@ -22,7 +22,7 @@ class Produit
     private $id;
 
     /**
-     * @ORM\OneToOne("targetEntity=Acme\EcommerceBundle\Entity\Media", cascad={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Acme\EcommerceBundle\Entity\Media", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      * 
      */
@@ -30,13 +30,13 @@ class Produit
 
 
     /**
-     * @ORM\ManyToOne("targetEntity=Acme\EcommerceBundle\Entity\Category", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="Acme\EcommerceBundle\Entity\Category", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $category;
 
     /**
-     * @ORM\ManyToOne("targetEntity=Acme\EcommerceBundle\Entity\Tva", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="Acme\EcommerceBundle\Entity\Tva", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $tva;
@@ -58,7 +58,7 @@ class Produit
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text", unique=true)
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 

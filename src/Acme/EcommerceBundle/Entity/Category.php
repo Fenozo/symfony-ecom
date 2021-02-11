@@ -22,7 +22,7 @@ class Category
     private $id;
 
     /**
-     * @ORM\OneToOne("targetEntity=Acme\EcommerceBundle\Entity\Media", cascad={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Acme\EcommerceBundle\Entity\Media", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      * 
      */
